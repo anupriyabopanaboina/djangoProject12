@@ -1,0 +1,120 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> add emp</h1>
+<div class="container">
+<form action="" method="POST">{% csrf_token %}
+  <div class="mb-3">
+    <label for="Firstname" class="form-label">Firstname</label>
+    <input type="text" class="form-control" id="Firstname" name="firstname" value="{{ first_name }}"  aria-describedby="emailHelp">
+  </div>
+    <br>
+ <div class="mb-3">
+    <label for="Lastname" class="form-label">Lastname</label>
+    <input type="text" class="form-control" id="Lastname"  value="{{ last_name }}" name="lastname" aria-describedby="emailHelp">
+  </div>
+    <br>
+
+  <div class="mb-3">
+    <label for="department" class="form-label">Department</label>
+    <input type="text" class="form-control" id="department" value="{{ dept_id }}" name="department">
+  </div>
+    <br>
+    <div class="mb-3">
+    <label for="salary" class="form-label">Salary</label>
+    <input type="text" class="form-control" id="salary" value="{{ salary }} "name="salary">
+  </div>
+    <br>
+
+    <div class="mb-3">
+    <label for="bonus" class="form-label">Bonus</label>
+    <input type="text" class="form-control" id="bonus" value="{{ bonus }}" name="bonus">
+  </div>
+    <br>
+
+    <div class="mb-3">
+    <label for="role" class="form-label">Role</label>
+    <input type="text" class="form-control" id="role" value="{{ role_id }}" name="role">
+  </div>
+    <br>
+
+    <div class="mb-3">
+    <label for="phone.no" class="form-label">Phone number</label>
+    <input type="text" class="form-control" id="phone.no "value="{{ phone }}" name="phone.no">
+  </div>
+<br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+</body>
+</html>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+-->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+  <h1> Add An Employee</h1>
+<div class="container">
+<form action="" method="POST">{% csrf_token %}
+  <div class="mb-3">
+    <label for="Firstname" class="form-label">Firstname</label>
+    <input type="text" class="form-control" id="Firstname" name="firstname" value="{{ first_name }}"  aria-describedby="emailHelp">
+  </div>
+
+ <div class="mb-3">
+    <label for="Lastname" class="form-label">Lastname</label>
+    <input type="text" class="form-control" id="Lastname"  value="{{ last_name }}" name="lastname" aria-describedby="emailHelp">
+  </div>
+
+
+  <div class="mb-3">
+    <label for="department" class="form-label">Department</label>
+    <input type="text" class="form-control" id="department" value="{{ dept_id }}" name="department">
+  </div>
+
+    <div class="mb-3">
+    <label for="salary" class="form-label">Salary</label>
+    <input type="text" class="form-control" id="salary" value="{{ salary }} "name="salary">
+  </div>
+
+
+    <div class="mb-3">
+    <label for="bonus" class="form-label">Bonus</label>
+    <input type="text" class="form-control" id="bonus" value="{{ bonus }}" name="bonus">
+  </div>
+
+
+    <div class="mb-3">
+    <label for="role" class="form-label">Role</label>
+    <input type="text" class="form-control" id="role" value="{{ role_id }}" name="role">
+  </div>
+
+    <div class="mb-3">
+    <label for="phone.no" class="form-label">Phone number</label>
+    <input type="text" class="form-control" id="phone.no "value="{{ phone }}" name="phone.no">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

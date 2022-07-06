@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <h1>Filter Employee</h1>
+    <hr>
+   <form action="/filter_emp/" method="POST">{% csrf_token %}
+  <div class="mb-3">
+    <label for="Firstname" class="form-label">Firstname/Lastname</label>
+    <input type="text" class="form-control" id="Firstname" name="name" value="{{ name }}" >
+  </div>
+
+
+  <div class="mb-3">
+    <label for="department" class="form-label">Department (1.HR 2.sales dept 3.marketibg 4.operatinal dept 5.purchase dept 6.IT)</label>
+    <input type="text" class="form-control" id="department" value="{{ dept }}" name="department">
+  </div>
+    <br>
+    <div class="mb-3">
+    <label for="role" class="form-label">Role(1.programmer 2.business analyst 3.Manager 4.TL 5.project manager 6.Accountant 7.Sales representative</label>
+    <input type="text" class="form-control" id="role" value="{{ role }}" name="role">
+  </div>
+    <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+</body>
+</html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
